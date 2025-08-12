@@ -6,7 +6,7 @@ type Props = {
   otherfeature: OtherFeature[];
 };
 
-export default function OtherFeature({ otherfeature }: Props) {
+export default function OtherFeatureCard({ otherfeature }: Props) {
   return (
     <div className={styles.card}>
       <h3 className={styles.title}>そのほかの便利な機能</h3>
