@@ -1,0 +1,33 @@
+.bg {
+  padding: 48px 0;
+  color: var(--color-font-white);
+  background-color: var(--color-bg-secondary);
+  font-weight: bold;
+  text-align: center;
+}
+.text {
+  font-size: 24px;
+}
+.text span {
+  display: inline-block;
+}
+.text02 {
+  margin-top: 8px;
+  font-size: 16px;
+}
+.button {
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .bg {
+    padding: 64px 0;
+  }
+  .text {
+    font-size: 32px;
+  }
+  .text02 {
+    font-size: 18px;
+  }
+
+}

@@ -1,0 +1,116 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+}
+.item {
+  border: 2px solid var(--color-border-gray);
+  border-radius: 24px;
+  padding: 24px 16px;
+}
+.paid.item  {
+  border: 2px solid var(--color-border-primary);
+  background-color: var(--color-bg-primary-extra-light);
+  color: var(--color-font-primary);
+}
+.title {
+  display: grid;
+  place-items: center;
+  max-width: 210px;
+  height: 48px;
+  margin: 0 auto;
+  background-color: var(--color-bg-white);
+  border: 2px solid var(--color-border-gray);
+  border-radius: 100vh;
+  font-size: 20px;
+  font-weight: bold;
+}
+.paid .title {
+  border: 2px solid var(--color-border-primary);
+}
+.priceTitle {
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+}
+.price {
+  margin-top: 12px;
+  padding-left: .05em;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: .05em;
+}
+.functionTitle {
+  margin-top: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+}
+.functionTitle::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 8px auto 0;
+  background-color: var(--color-font-base);
+}
+.paid .functionTitle::after {
+  background-color: var(--color-bg-primary);
+}
+.functionListWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+.functionList {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.functionItem {
+  display: flex;
+  align-items: center;
+}
+.functionItem::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  width: 10px;
+  height: 6px;
+  margin-right: 8px;
+  border-left: 2px solid var(--color-border-gray);
+  border-bottom: 2px solid var(--color-border-gray);
+  transform: rotate(-45deg);
+}
+.paid .functionItem::before {
+  border-left: 2px solid var(--color-border-primary);
+  border-bottom: 2px solid var(--color-border-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .item {
+    padding: 32px 16px;
+  }
+  .priceTitle {
+    margin-top: 32px;
+    font-size: 20px;
+  }
+  .price {
+    margin-top: 8px;
+    font-size: 36px;
+  }
+  .functionTitle  {
+    margin-top: 32px;
+  }
+  .functionList {
+    margin-top: 16px;
+  }
+}

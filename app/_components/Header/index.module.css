@@ -1,0 +1,30 @@
+.header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: var(--z-index-header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 8px;
+  border-bottom: 2px solid var(--color-border-primary);
+  background-color: var(--color-bg-white);
+}
+.logo {
+  width: 120px;
+}
+.buttonBox {
+  display: flex;
+  gap: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 75px;
+    padding: 0 16px;
+  }
+  .logo {
+    width: 150px;
+  }
+}

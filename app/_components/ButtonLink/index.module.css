@@ -1,0 +1,57 @@
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 100vh;
+  font-weight: bold;
+  text-align: center;
+}
+.buttonAccent {
+  border: 2px solid var(--color-border-black);
+  background-color: var(--color-bg-accent);
+  color: var(--color-font-black);
+}
+.buttonWhite {
+  border: 2px solid var(--color-border-primary);
+  background-color: var(--color-bg-white);
+  color: var(--color-font-primary);
+}
+.buttonBlack {
+  background-color: var(--color-bg-black);
+  color: var(--color-font-white);
+}
+.buttonCenter {
+  margin: 0 auto;
+}
+.buttonHeader {
+  display: grid;
+  place-items: center;
+  width: 85px;
+  height: 34px;
+  padding: 0;
+  font-size: 12px;
+}
+.buttonSigin {
+  display: grid;
+  place-items: center;
+  height: 45px;
+  width: 100%;
+  font-size: 14px;
+}
+.buttonCta {
+  display: grid;
+  place-items: center;
+  width: 300px;
+  height: 68px;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttonHeader {
+    width: 120px;
+    height: 42px;
+    font-size: 16px;
+  }
+  .buttonSigin {
+    font-size: 16px;
+  }
+}

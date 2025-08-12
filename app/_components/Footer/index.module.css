@@ -1,0 +1,44 @@
+.footer {
+  padding: 40px 0 16px;
+}
+.logo {
+  width: 200px;
+  margin: 0 auto;
+}
+.nav {
+  margin-top: 24px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.item {
+  font-size: 12px;
+  text-align: center;
+}
+.copyright {
+  display: block;
+  margin-top: 24px;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .item:not(:first-child)::before {
+    content: "/";
+    display: inline-block;
+    padding: 0 6px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    font-size: 14px;
+  }
+}
