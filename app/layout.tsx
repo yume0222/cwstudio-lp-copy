@@ -4,7 +4,7 @@ import Header from "./_components/Header";
 import Footer from "./_components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('http://localhost:3000'),
+  metadataBase: new URL('https://cwstudio-lp-copy.vercel.app'),
   title: {
     template: '%s | 小説の執筆ツールのLP',
     default: '小説の執筆ツールのLP',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     images: ['/ogp.png'],
   },
   alternates: {
-    canonical: 'http://localhost:3000',
+    canonical: 'https://cwstudio-lp-copy.vercel.app',
   },
 };
 
